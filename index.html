@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaintJS</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-    
+</head>
+
+<body style="background-image: url('img/background.jpeg');">
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls" >
+        <!-- 크기 설정 -->
+        <div class="controls__range">
+            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1"/>
+        </div>
+        <!-- 버튼 -->
+        <div class="controls__btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+        </div>
+        <!-- 색상 -->
+        <div class="controls__colors" id="jsColor">
+            <div class="controls_color" style="background-color: #1c1a1a"></div>
+            <div class="controls_color" style="background-color: #fff"></div>
+            <div class="controls_color" style="background-color: #E23131"></div>
+            <div class="controls_color" style="background-color: #E18309"></div>
+            <div class="controls_color" style="background-color: #D8E526"></div>
+            <div class="controls_color" style="background-color: #36DA2A"></div>
+            <div class="controls_color" style="background-color: #2ADADA "></div>
+            <div class="controls_color" style="background-color: #2A70DA "></div>
+            <div class="controls_color" style="background-color: #9F2ADA"></div>
+        </div>
+    </div>
     <script src="js/app.js"></script>
 </body>
+
 </html>
